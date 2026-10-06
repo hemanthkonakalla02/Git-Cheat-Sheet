@@ -111,3 +111,50 @@
 21]How to get the changes from github to local ?
 
     ->git pull
+
+22]How to create a new branch ?
+
+    ->git branch branchName
+
+23]How to view all the branches ?
+
+    ->git branch -a
+
+24]How to switch between branches ?
+
+    ->git switch branchName or git checkout branchName
+
+
+25]How to create a new branch and checkout at the same time ?
+
+    ->git checkout -b branchName
+
+
+26]Push the created branch to github ?
+
+    ->git push origin branchName
+
+
+27]Temporarily saves the uncommited changes and clears the working directory ?
+
+    ->git stash
+
+28]How to get back the stashed changes ?
+
+    ->git stash pop
+
+
+29]How to view the list of stashed files ?
+
+    ->git stash list
+
+30]Downloads the latest commits,branches  from remote repository to local machine ?
+
+    ->git fetch -a 
+
+31]Git Merge ?
+
+    ->Git merge creates a merge commit
+    ->It preserves the commit structure
+
+    
