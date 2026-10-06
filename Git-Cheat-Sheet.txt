@@ -179,8 +179,18 @@
     ->Git reset is used to move the head pointer to specific commit id and the commit history be deleted
     ->In git reset thier are 3 types:-
         i)git reset commitid (mixed) : commit history will be deleted,but the changes will be working directory
+            
+            ->git reset 6c40344
 
         ii)git reset --soft commitid : commit history will be deleted,but the changes will be staged area
 
+            -> git reset --soft 6c40344
+
         iii)git reset --hard commitid: commit history will be deleted,and the changes also get deleted
 
+            -> git reset --hard 6c40344
+
+
+35]What is git-cherry-pick ?
+
+    ->git-cherry-pick is used to select and apply specific commits from one branch to another branch
