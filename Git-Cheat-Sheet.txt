@@ -180,17 +180,25 @@
     ->In git reset thier are 3 types:-
         i)git reset commitid (mixed) : commit history will be deleted,but the changes will be working directory
             
-            ->git reset 6c40344
+            example:git reset 6c40344
 
         ii)git reset --soft commitid : commit history will be deleted,but the changes will be staged area
 
-            -> git reset --soft 6c40344
+            example:git reset --soft 6c40344
 
         iii)git reset --hard commitid: commit history will be deleted,and the changes also get deleted
 
-            -> git reset --hard 6c40344
+            example:git reset --hard 6c40344
 
 
 35]What is git-cherry-pick ?
 
     ->git-cherry-pick is used to select and apply specific commits from one branch to another branch
+
+        example-1:git cherry-pick 90fd26d
+        example-2:git cherry-pick 461c049 -e (we can change the commit message)
+        example-3:git cherry-pick 461c049 -n (file will be in staged area)
+
+36]Deleting the local branch ?
+
+    ->git branch -D branchName(force deletion) / git branch -d branchName(soft deletion)
