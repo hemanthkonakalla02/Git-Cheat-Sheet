@@ -202,3 +202,15 @@
 36]Deleting the local branch ?
 
     ->git branch -D branchName(force deletion) / git branch -d branchName(soft deletion)
+    example: git branch -D testingteam
+    example: git branch -d opbranch
+
+
+37]Deleting the branch in github ?
+
+    ->git push origin --delete Demobranch
+
+
+38]How to view the git commit history for one specific branch or all the branches ?
+
+    ->git log --oneline / git log --oneline --all 
