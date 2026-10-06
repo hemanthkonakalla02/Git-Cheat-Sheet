@@ -2,6 +2,7 @@ package com.java.standard.edition.serializationdeserialization;
 
 import java.io.Serializable;
 //New line added by SDE-3
+//New line added by manager
 public class Employee implements Serializable
 {
 	/**
