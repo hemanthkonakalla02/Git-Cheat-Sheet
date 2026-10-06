@@ -14,7 +14,7 @@ public class Employee implements Serializable
 	private String name;
 	private float salary;
 	private transient String dept;
-	//Employee constructor
+	
 	public Employee(int eid,String name,float salary,String dept)
 	{
 		this.eid=eid;
