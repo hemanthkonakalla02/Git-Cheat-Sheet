@@ -1,0 +1,113 @@
+1]Explain indetail about git and github ?
+
+    ->Git is a distributed version control system used to track changes in code,maintain versions and enable colloboration among multiple developers is called as a git
+    ->In git thier are different states:-
+        i)untracked files : files not known to git
+        ii)staged area : files added to git using git add
+        iii)unstaged area : files modified but not staged
+        iv)commit: saves into local repository
+        v)push : upload to remote(github)
+
+    ->Github is a cloud based hosting service that store git repositories
+
+
+
+2]What is a git repository ?
+
+    ->Git repository is a location where all the project files and thier history are stored.
+
+
+3]What is git branch ?
+
+    ->Git branch allows developers to work independently without effecting the main code.
+
+4]What is git stash ?
+
+    ->git stash temporarily saves the uncommited changes and clears the working directory
+
+
+5]Difference between git fetch and git pull ?
+
+    ->git fetch will downloads only data
+    ->It is safer will not cause any merge conflicts
+    ->It does not change the local code
+
+
+    ->git pull will downloads and merges the data
+    ->Can cause the merge conflicts
+    ->It updates the working directory
+
+
+
+6]What does git add . do ?
+
+    ->stages all modified files and new files for commit
+
+
+7]What does git commit -m "message" do ?
+
+    ->saves all staged changes to local repository with a message
+
+
+8]What is a remote repository? 
+
+    ->A remote repository is a repo hosted on services like github,gitlab,bitbucket etc..
+
+
+9]How to configure the username ?
+
+    ->git config --global user.name "username"
+
+
+10]How to configure the email ?
+
+    ->git config --global user.email "email"
+
+
+11]How to check configured username and email ?
+
+    ->git config --list
+
+
+12]How to intialize the git ?
+
+    ->git init
+
+
+13]How to display the current state of working directory and staging area ?
+
+    ->git status
+
+
+14]Adding a file to git ?
+
+    ->git add filename
+
+15]Adding all the files to git at a time ?
+
+    ->git add .
+
+16]How to commit the files ?
+
+    ->git commit -m "message"
+
+
+17]How to add the remote origin ?
+
+    ->git remote add origin repositoryURL
+
+18]How to view remote URL ?
+
+    ->git remote -v
+
+19]Push the files to github ?
+
+    ->git push -u origin branchName
+
+20]Git cloning ?
+
+    ->git clone URL
+
+21]How to get the changes from github to local ?
+
+    ->git pull
