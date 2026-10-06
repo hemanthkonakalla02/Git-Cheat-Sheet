@@ -157,4 +157,30 @@
     ->Git merge creates a merge commit
     ->It preserves the commit structure
 
+    ->git merge hemanthdev (Changes will be merged into master branch)
+
+
+32]Git Rebase ?
+
+    ->git rebase rewrites the history
+    ->git rebase makes linear history
+
+    ->git rebase master (rebase has to done at child branch)
+
+33]What is git revert ?
+
+    ->git revert is used to undo the changes made at specific commit by preserving the commit history.
     
+    -> git revert 99c71d6
+
+
+34]What is git reset ?
+
+    ->Git reset is used to move the head pointer to specific commit id and the commit history be deleted
+    ->In git reset thier are 3 types:-
+        i)git reset commitid (mixed) : commit history will be deleted,but the changes will be working directory
+
+        ii)git reset --soft commitid : commit history will be deleted,but the changes will be staged area
+
+        iii)git reset --hard commitid: commit history will be deleted,and the changes also get deleted
+
