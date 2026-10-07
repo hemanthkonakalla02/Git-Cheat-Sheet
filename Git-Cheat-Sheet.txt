@@ -214,3 +214,104 @@
 38]How to view the git commit history for one specific branch or all the branches ?
 
     ->git log --oneline / git log --oneline --all 
+
+
+39]What are merge conflicts ?
+
+    ->When 2 branches modifies same lines of code ,git cannot auto-merge and asks the developer to resolve manually
+
+
+40]How to resolve merge conflicts ?
+
+    ->Once the merge conflict has occured
+    ->I will open the file
+    ->Decide the final corrected version
+    ->Remove the conflict markers
+    ->Save and commit the changes
+
+41]Git ignore ?
+
+    ->It specifies files/folders that git should ignore
+
+
+42]Git fork ?
+
+    ->forking creates the copy of another users repo into our github account.
+
+after forking the project
+    ->I will clone the project
+    ->Create new branch
+    ->add new features
+    ->commit the changes
+    ->push to github
+    ->Raise the PR to main fork
+    ->If the user satisfies with the features then he will merge the pull request.
+
+
+43]Git Pullrequest ?
+
+    ->Git Pullrequest is a request to merge our branch into another branch usually master/main branch,Team lead will review the code after pull request.
+
+
+44]What is HEAD ? 
+
+    ->Head points to recent commit
+
+
+45]What is Origin ?
+
+    ->Origin is the default name given to remote repository when you clone
+
+
+46]What is UpStream ?
+
+    ->Upstream refers to the original repository when working with fork
+
+
+47]Rebase vs merge difference ?
+
+    ->Git merge creates a merge commit
+    ->It preserves the commit structure
+
+    ->Git rebase rewrites the history
+    ->Git rebase makes linear history
+
+
+48]How to change the git commit message ?
+
+    ->git commit --amend
+
+
+49]Git difference ?
+
+    ->git diff branch1 branch2
+
+
+50]git blame ?
+
+    ->git blame fileName
+
+Check who changes the code line by line
+
+
+51]git squash ?
+
+    ->Git squash makes multiple commits into single commit
+
+git rebase -i HEAD~3
+
+
+52]Git Flow Branching Strategy ?
+
+main : production ready code
+develop: Integration branch
+feature : new feature
+release : pre production testing
+hotfix : urgent production fix
+
+
+53]git push --force-with-lease ?
+
+    ->After doing git squash or rebase,git rejects normal pull because the history is rewritten so i use git push --force-with-lease instead of --force
+    because it checks if my team mates has pushed any commit ,if yes then it rejects my push protecting thier work.
+    
