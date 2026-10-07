@@ -5,7 +5,7 @@
         i)untracked files : files not known to git
         ii)staged area : files added to git using git add
         iii)unstaged area : files modified but not staged
-        iv)commit: saves into local repository
+        iv)commit: saves into local repository 
         v)push : upload to remote(github)
 
     ->Github is a cloud based hosting service that store git repositories
