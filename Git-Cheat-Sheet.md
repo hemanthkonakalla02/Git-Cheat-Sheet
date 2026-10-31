@@ -1,0 +1,317 @@
+1]Explain indetail about git and github ?
+
+    ->Git is a distributed version control system used to track changes in code,maintain versions and enable colloboration among multiple developers is called as a git
+    ->In git thier are different states:-
+        i)untracked files : files not known to git
+        ii)staged area : files added to git using git add
+        iii)unstaged area : files modified but not staged
+        iv)commit: saves into local repository 
+        v)push : upload to remote(github)
+
+    ->Github is a cloud based hosting service that store git repositories
+
+
+
+2]What is a git repository ?
+
+    ->Git repository is a location where all the project files and thier history are stored.
+
+
+3]What is git branch ?
+
+    ->Git branch allows developers to work independently without effecting the main code.
+
+4]What is git stash ?
+
+    ->git stash temporarily saves the uncommited changes and clears the working directory
+
+
+5]Difference between git fetch and git pull ?
+
+    ->git fetch will downloads only data
+    ->It is safer will not cause any merge conflicts
+    ->It does not change the local code
+
+
+    ->git pull will downloads and merges the data
+    ->Can cause the merge conflicts
+    ->It updates the working directory
+
+
+
+6]What does git add . do ?
+
+    ->stages all modified files and new files for commit
+
+
+7]What does git commit -m "message" do ?
+
+    ->saves all staged changes to local repository with a message
+
+
+8]What is a remote repository? 
+
+    ->A remote repository is a repo hosted on services like github,gitlab,bitbucket etc..
+
+
+9]How to configure the username ?
+
+    ->git config --global user.name "username"
+
+
+10]How to configure the email ?
+
+    ->git config --global user.email "email"
+
+
+11]How to check configured username and email ?
+
+    ->git config --list
+
+
+12]How to intialize the git ?
+
+    ->git init
+
+
+13]How to display the current state of working directory and staging area ?
+
+    ->git status
+
+
+14]Adding a file to git ?
+
+    ->git add filename
+
+15]Adding all the files to git at a time ?
+
+    ->git add .
+
+16]How to commit the files ?
+
+    ->git commit -m "message"
+
+
+17]How to add the remote origin ?
+
+    ->git remote add origin repositoryURL
+
+18]How to view remote URL ?
+
+    ->git remote -v
+
+19]Push the files to github ?
+
+    ->git push -u origin branchName
+
+20]Git cloning ?
+
+    ->git clone URL
+
+21]How to get the changes from github to local ?
+
+    ->git pull
+
+22]How to create a new branch ?
+
+    ->git branch branchName
+
+23]How to view all the branches ?
+
+    ->git branch -a
+
+24]How to switch between branches ?
+
+    ->git switch branchName or git checkout branchName
+
+
+25]How to create a new branch and checkout at the same time ?
+
+    ->git checkout -b branchName
+
+
+26]Push the created branch to github ?
+
+    ->git push origin branchName
+
+
+27]Temporarily saves the uncommited changes and clears the working directory ?
+
+    ->git stash
+
+28]How to get back the stashed changes ?
+
+    ->git stash pop
+
+
+29]How to view the list of stashed files ?
+
+    ->git stash list
+
+30]Downloads the latest commits,branches  from remote repository to local machine ?
+
+    ->git fetch -a 
+
+31]Git Merge ?
+
+    ->Git merge creates a merge commit
+    ->It preserves the commit structure
+
+    ->git merge hemanthdev (Changes will be merged into master branch)
+
+
+32]Git Rebase ?
+
+    ->git rebase rewrites the history
+    ->git rebase makes linear history
+
+    ->git rebase master (rebase has to done at child branch)
+
+33]What is git revert ?
+
+    ->git revert is used to undo the changes made at specific commit by preserving the commit history.
+    
+    -> git revert 99c71d6
+
+
+34]What is git reset ?
+
+    ->Git reset is used to move the head pointer to specific commit id and the commit history be deleted
+    ->In git reset thier are 3 types:-
+        i)git reset commitid (mixed) : commit history will be deleted,but the changes will be working directory
+            
+            example:git reset 6c40344
+
+        ii)git reset --soft commitid : commit history will be deleted,but the changes will be staged area
+
+            example:git reset --soft 6c40344
+
+        iii)git reset --hard commitid: commit history will be deleted,and the changes also get deleted
+
+            example:git reset --hard 6c40344
+
+
+35]What is git-cherry-pick ?
+
+    ->git-cherry-pick is used to select and apply specific commits from one branch to another branch
+
+        example-1:git cherry-pick 90fd26d
+        example-2:git cherry-pick 461c049 -e (we can change the commit message)
+        example-3:git cherry-pick 461c049 -n (file will be in staged area)
+
+36]Deleting the local branch ?
+
+    ->git branch -D branchName(force deletion) / git branch -d branchName(soft deletion)
+    example: git branch -D testingteam
+    example: git branch -d opbranch
+
+
+37]Deleting the branch in github ?
+
+    ->git push origin --delete Demobranch
+
+
+38]How to view the git commit history for one specific branch or all the branches ?
+
+    ->git log --oneline / git log --oneline --all 
+
+
+39]What are merge conflicts ?
+
+    ->When 2 branches modifies same lines of code ,git cannot auto-merge and asks the developer to resolve manually
+
+
+40]How to resolve merge conflicts ?
+
+    ->Once the merge conflict has occured
+    ->I will open the file
+    ->Decide the final corrected version
+    ->Remove the conflict markers
+    ->Save and commit the changes
+
+41]Git ignore ?
+
+    ->It specifies files/folders that git should ignore
+
+
+42]Git fork ?
+
+    ->forking creates the copy of another users repo into our github account.
+
+after forking the project
+
+    ->I will clone the project
+    ->Create new branch
+    ->add new features
+    ->commit the changes
+    ->push to github
+    ->Raise the PR to main fork
+    ->If the user satisfies with the features then he will merge the pull request.
+
+
+43]Git Pullrequest ?
+
+    ->Git Pullrequest is a request to merge our branch into another branch usually master/main branch,Team lead will review the code after pull request.
+
+
+44]What is HEAD ? 
+
+    ->Head points to recent commit
+
+
+45]What is Origin ?
+
+    ->Origin is the default name given to remote repository when you clone
+
+
+46]What is UpStream ?
+
+    ->Upstream refers to the original repository when working with fork
+
+
+47]Rebase vs merge difference ?
+
+    ->Git merge creates a merge commit
+    ->It preserves the commit structure
+
+    ->Git rebase rewrites the history
+    ->Git rebase makes linear history
+
+
+48]How to change the git commit message ?
+
+    ->git commit --amend
+
+
+49]Git difference ?
+
+    ->git diff branch1 branch2
+
+
+50]git blame ?
+
+    ->git blame fileName
+
+Check who changes the code line by line
+
+
+51]git squash ?
+
+    ->Git squash makes multiple commits into single commit
+
+git rebase -i HEAD~3
+
+
+52]Git Flow Branching Strategy ?
+
+main : production ready code
+develop: Integration branch
+feature : new feature
+release : pre production testing
+hotfix : urgent production fix
+
+
+53]git push --force-with-lease ?
+
+    ->After doing git squash or rebase,git rejects normal pull because the history is rewritten so i use git push --force-with-lease instead of --force
+    because it checks if my team mates has pushed any commit ,if yes then it rejects my push protecting thier work.
