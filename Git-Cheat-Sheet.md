@@ -290,15 +290,15 @@
 50]git blame ?
 
     ->git blame fileName
-
-Check who changes the code line by line
+     
+     Check who changes the code line by line
 
 
 51]git squash ?
 
     ->Git squash makes multiple commits into single commit
-
-git rebase -i HEAD~3
+    
+    git rebase -i HEAD~3
 
 
 52]Git Flow Branching Strategy ?
