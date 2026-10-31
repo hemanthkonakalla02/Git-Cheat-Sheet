@@ -237,8 +237,8 @@
 42]Git fork ?
 
     ->forking creates the copy of another users repo into our github account.
-
-after forking the project
+    
+    after forking the project
     ->I will clone the project
     ->Create new branch
     ->add new features
