@@ -303,11 +303,11 @@
 
 52]Git Flow Branching Strategy ?
 
-main : production ready code
-develop: Integration branch
-feature : new feature
-release : pre production testing
-hotfix : urgent production fix
+     main : production ready code
+    develop: Integration branch
+    feature : new feature
+    release : pre production testing
+    hotfix : urgent production fix
 
 
 53]git push --force-with-lease ?
